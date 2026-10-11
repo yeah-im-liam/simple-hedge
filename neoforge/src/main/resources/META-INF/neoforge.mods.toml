@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "CC-BY-NC-4.0"
+
+[[mods]]
+modId = "simple_hedge_mod"
+version = "${version}"
+displayName = "Simple Hedge Mod"
+authors = "yeahimliam"
+description = '''
+A mod that adds a custom vanilla styled hedge block with special traits and flowering variants!
+'''
+logoFile = "assets/simple_hedge_mod/icon.png"
+# NeoForge 26.2+ reads iconFile and warns when only logoFile is set
+iconFile = "assets/simple_hedge_mod/icon.png"
+
+[[dependencies.simple_hedge_mod]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforge_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simple_hedge_mod]]
+modId = "minecraft"
+type = "required"
+versionRange = "${neoforge_minecraft_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "simple_hedge_mod-neoforge.mixins.json"

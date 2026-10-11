@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "yeah.im.liam.simplehedge.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "EntityAccessor",
+    "PlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

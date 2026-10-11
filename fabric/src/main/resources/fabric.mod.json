@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "simple_hedge_mod",
+  "version": "${version}",
+  "name": "Simple Hedge Mod",
+  "description": "A mod that adds a custom vanilla styled hedge block with special traits and flowering variants!",
+  "authors": [
+    "yeahimliam"
+  ],
+  "license": "CC-BY-NC-4.0",
+  "icon": "assets/simple_hedge_mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "yeah.im.liam.simplehedge.fabric.SimpleHedgeFabric"
+    ],
+    "client": [
+      "yeah.im.liam.simplehedge.fabric.client.SimpleHedgeFabricClient"
+    ]
+  },
+  "mixins": [
+    "simple_hedge_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_min}",
+    "minecraft": "${fabric_minecraft_range}",
+    "java": ">=${java_version}",
+    "fabric-api": "*"
+  }
+}
