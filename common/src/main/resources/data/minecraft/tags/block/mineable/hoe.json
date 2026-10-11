@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "simple_hedge_mod:hedge",
+    "simple_hedge_mod:flowering_dandelion_hedge",
+    "simple_hedge_mod:flowering_poppy_hedge",
+    "simple_hedge_mod:flowering_blue_orchid_hedge",
+    "simple_hedge_mod:flowering_allium_hedge",
+    "simple_hedge_mod:flowering_azure_bluet_hedge",
+    "simple_hedge_mod:flowering_red_tulip_hedge",
+    "simple_hedge_mod:flowering_orange_tulip_hedge",
+    "simple_hedge_mod:flowering_white_tulip_hedge",
+    "simple_hedge_mod:flowering_pink_tulip_hedge",
+    "simple_hedge_mod:flowering_oxeye_daisy_hedge",
+    "simple_hedge_mod:flowering_cornflower_hedge",
+    "simple_hedge_mod:flowering_lily_of_the_valley_hedge",
+    "simple_hedge_mod:flowering_wither_rose_hedge",
+    "simple_hedge_mod:flowering_torchflower_hedge",
+    {
+      "id": "simple_hedge_mod:flowering_golden_dandelion_hedge",
+      "required": false
+    },
+    {
+      "id": "simple_hedge_mod:flowering_closed_eyeblossom_hedge",
+      "required": false
+    },
+    {
+      "id": "simple_hedge_mod:flowering_open_eyeblossom_hedge",
+      "required": false
+    }
+  ]
+}

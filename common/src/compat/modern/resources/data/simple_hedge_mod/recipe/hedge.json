@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LLL",
+    "LSL",
+    "LLL"
+  ],
+  "key": {
+    "L": "#minecraft:leaves",
+    "S": "minecraft:stick"
+  },
+  "result": {
+    "id": "simple_hedge_mod:hedge",
+    "count": 4
+  }
+}

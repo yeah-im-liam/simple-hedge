@@ -1,0 +1,6 @@
+{
+  "parent": "simple_hedge_mod:block/flowering_hedge",
+  "textures": {
+    "flower_overlay": "simple_hedge_mod:block/flowering_red_tulip_hedge"
+  }
+}

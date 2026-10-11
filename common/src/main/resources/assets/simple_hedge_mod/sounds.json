@@ -1,0 +1,8 @@
+{
+  "hedge_shear": {
+    "subtitle": "subtitles.simple_hedge_mod.hedge_shear",
+    "sounds": [
+      "simple_hedge_mod:hedge_shear"
+    ]
+  }
+}

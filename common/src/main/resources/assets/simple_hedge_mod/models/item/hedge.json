@@ -1,0 +1,6 @@
+{
+  "parent": "simple_hedge_mod:item/hedge_base",
+  "textures": {
+    "1": "simple_hedge_mod:item/hedge"
+  }
+}
