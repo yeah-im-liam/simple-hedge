@@ -93,10 +93,12 @@ public final class HedgeBlocks {
     }
 
     private static BlockBehaviour.Properties properties(ResourceKey<Block> key) {
-        return Props.block(BlockBehaviour.Properties.ofFullCopy(Blocks.AZALEA)
+        BlockBehaviour.Properties properties = BlockBehaviour.Properties.ofFullCopy(Blocks.AZALEA)
             .strength(0.4F)
             .noOcclusion()
-            .dynamicShape(), key);
+            .dynamicShape()
+            .isRedstoneConductor((state, level, pos) -> false);
+        return Props.block(properties, key);
     }
 
     private static BlockBehaviour.Properties floweringProperties(HedgeFlower flower, ResourceKey<Block> key) {
