@@ -25,6 +25,7 @@ Surround a stick with any type of leaves to make four hedges.
 ## Links
 
 - Modrinth: https://modrinth.com/mod/simple-hedge
+- Report issues: https://github.com/yeah-im-liam/simple-hedge/issues
 - Support: https://ko-fi.com/yeahimliam
 
 ## License
