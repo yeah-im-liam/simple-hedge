@@ -5,7 +5,6 @@
 ### More versions and loaders
 - Now available on **Fabric** and **NeoForge** for Minecraft **1.21 – 1.21.11** and **26.1 – 26.3**
 - One file per loader covers each range: 1.21 – 1.21.1, 1.21.2 – 1.21.11 and 26.1 – 26.3
-- The Fabric version now needs **Fabric API**
 
 ### New
 - **Eyeblossom hedges** (1.21.4 and later) that open at night and close during the day, like real eyeblossoms
