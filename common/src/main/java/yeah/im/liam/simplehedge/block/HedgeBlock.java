@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.EntityCollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -27,6 +28,8 @@ import yeah.im.liam.simplehedge.registry.HedgeBlocks;
 
 public class HedgeBlock extends HedgeBlockBase {
     private static final VoxelShape SHAPE = Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0);
+    // The tiny hollow keeps every face full, but the renderer no longer lights inner faces from the neighbouring blocks.
+    private static final VoxelShape COLLISION = Shapes.join(SHAPE, Block.box(7.0, 7.0, 7.0, 9.0, 9.0, 9.0), BooleanOp.ONLY_FIRST);
 
     public HedgeBlock(Properties properties) {
         super(properties);
@@ -44,7 +47,7 @@ public class HedgeBlock extends HedgeBlockBase {
 
     @Override
     protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return canPassThrough(context) ? Shapes.empty() : SHAPE;
+        return canPassThrough(context) ? Shapes.empty() : COLLISION;
     }
 
     @Override
@@ -65,7 +68,7 @@ public class HedgeBlock extends HedgeBlockBase {
 
     @Override
     protected boolean isPathfindable(BlockState state, PathComputationType type) {
-        return type == PathComputationType.AIR || super.isPathfindable(state, type);
+        return type == PathComputationType.AIR;
     }
 
     @Override
