@@ -60,6 +60,13 @@ subprojects {
         it.options.release = rootProject.java_version as int
     }
 
+    // Dev runs use the target's Java version; older NeoForge builds cannot start on newer Java.
+    tasks.withType(JavaExec).configureEach {
+        javaLauncher = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(rootProject.java_version as int)
+        }
+    }
+
     if (rootProject.obfuscated) {
         loom {
             mixin {
